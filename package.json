@@ -15,7 +15,7 @@
     "type": "git"
   },
   "author": "Filippo Vangelista",
-  "license": "ISC",
+  "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/FVangelista/neo-tv/issues"
   },
