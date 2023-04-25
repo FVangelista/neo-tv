@@ -5,10 +5,10 @@ import createMain from "../../components/createMain.js";
 // Project Init
 
 window.addEventListener("DOMContentLoaded", () =>
-  createNav("/neo-tv/", "/neo-tv/search.html")
+  createNav("/", "/search.html")
 );
 window.addEventListener("DOMContentLoaded", createHero);
 window.addEventListener("DOMContentLoaded", createMain);
 window.addEventListener("DOMContentLoaded", () =>
-  createFooter("/neo-tv/", "/neo-tv/search.html")
+  createFooter("/", "/search.html")
 );

@@ -9,7 +9,7 @@ module.exports = {
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: "/neo-tv/",
+    publicPath: "/",
   },
 
   devtool: "eval-source-map",
@@ -31,7 +31,7 @@ module.exports = {
       },
     },
     hot: true,
-    open: "/neo-tv/",
+    open: "/",
     compress: true,
   },
 
@@ -42,7 +42,7 @@ module.exports = {
         search: "src/pages/search/search.html",
       },
       js: {
-        filename: "[name].[contenthash:8].js",
+        inline: true,
       },
       css: {
         inline: true,

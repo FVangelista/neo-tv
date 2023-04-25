@@ -1,22 +1,18 @@
 const GET = async (id = "") => {
-  const res = await fetch(
-    `${process.env.BASEURL}${id}?api_key=${process.env.APIKEY}&language=en-US`
-  );
+  const res = await fetch(`/.netlify/functions/http-id?id=${id}`);
   const data = await res.json();
   return data;
 };
 
 const GET_2 = async (search = "two") => {
-  const res = await fetch(
-    `${process.env.BASEURLSEARCH}api_key=${process.env.APIKEY}&language=en-US&page=1&query=${search}`
-  );
+  const res = await fetch(`/.netlify/functions/http-search?search=${search}`);
   const data = await res.json();
   return data;
 };
 
 const GET_3 = async (category = "", page = "") => {
   const res = await fetch(
-    `${process.env.BASEURL}${category}?api_key=${process.env.APIKEY}&language=en-US&page=${page}`
+    `/.netlify/functions/http?category=${category}&page=${page}`
   );
   const data = await res.json();
   return data;
